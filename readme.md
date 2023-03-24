@@ -4,9 +4,7 @@ _Esta es una aplicación para guardar Pokémon favoritos y buscar su informació
 
 ## 🟢 App en linea en Fly.io:
 
-```
-https://delicate-tree-6336.fly.dev/
-```
+- [Pokédex](https://delicate-tree-6336.fly.dev/) - App en la nube de Fly.io
 
 ## Screenshot
 
@@ -35,8 +33,8 @@ _Programas necesarios_
 Un explorador como: Chrome, Firefox o Safari.
 ```
 
-- [VSCode](https://code.visualstudio.com/) - Descarga el editor de código
-- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Redis Local
+- [VSCode](https://code.visualstudio.com/) - Descarga el editor de código.
+- [Node.js](https://nodejs.org/es/docs) - Entorno de ejecución js en el servidor.
 
 ## Ejecutar App en local 🔧
 
