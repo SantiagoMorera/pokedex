@@ -46,7 +46,7 @@ const agregarAlCarrito = (productoId) => {
       imageHeight: 100,
       imageWidth: 100,
       showConfirmButton: false,
-      timer: 1500
+      timer: 2000
     });
     /*  Funcion argegar al carrito por primera vez */
   } else {
@@ -67,9 +67,9 @@ const agregarAlCarrito = (productoId) => {
       /* imageUrl: `${newProducto.thumbnail}`, */
       imageHeight: 100,
       imageWidth: 100,
-      text: "Se agrego correctamente al carrito",
+      text: "Se agregó correctamente a favoritos!",
       showConfirmButton: false,
-      timer: 900
+      timer: 1100
     })
   }
   actualizarCarrito()

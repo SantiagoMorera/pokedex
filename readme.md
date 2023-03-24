@@ -1,6 +1,6 @@
 # POKEDEX by thisisanti.dev
 
-_Esta es una aplicación para guardar Pokémons favoritos y buscar su información consumiendo la PokeAPI._
+_Esta es una aplicación para guardar Pokémon favoritos y buscar su información consumiendo la PokeAPI._
 
 ## Screenshot
 
@@ -24,7 +24,7 @@ _Programas necesarios_
 Un explorador como: Chrome, Firefox o Safari.
 ```
 
-- [VSCode](https://code.visualstudio.com/) - Descarga el editor de codigo
+- [VSCode](https://code.visualstudio.com/) - Descarga el editor de código
 - [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Redis Local
 
 ## Ejecutar App en local 🔧
@@ -44,7 +44,7 @@ Ingresa a http://localhost:8090
 ```
 
 ```
-Esta app require logear para poder usarla
+Esta app requiere loggear para poder usarla
 ```
 
 ```
@@ -60,21 +60,21 @@ Puedes registarte en el enlace http://localhost:8090/api/auth/signup
 ```
 Dentro de la app puedes:
 
-1.- Agregar Pokémons a favoritos.
-2.- Ver el listado de Pokémons.
-3.- Buscar Pokémons.
-4.- Ver el JSON de pokémons.
+1.- Agregar Pokémon a favoritos.
+2.- Ver el listado de Pokémon.
+3.- Buscar Pokémon.
+4.- Ver el JSON de pokémon.
 5.- Ver tu perfil de usuario con tus datos.
 
 ```
 
 ```
-A disfrutar Pokedex 🚀
+A disfrutar Pokédex 🚀
 ```
 
 ## Iniciar Sass ⌨️
 
-_Para hacer modificaciones en en los estilos en la carpeta del protecto ejecuta:_
+_Para hacer modificaciones en los estilos en la carpeta del proyecto ejecuta:_
 
 ```
 npm run sass
@@ -82,7 +82,7 @@ npm run sass
 
 ## Correr testing ✅
 
-_Con el la app corriendo en el puerto localhost:8090 ejecuta los siguientes comandos:_
+_Con la app corriendo en el puerto localhost:8090 ejecuta los siguientes comandos:_
 
 ```
 npm run testAxios
@@ -98,7 +98,7 @@ _Obtendrás el resultado de golpear la ruta get en nuestra api/pokedex_
 
 ## Construido con 🛠️
 
-_Tecnologias utilizadas en este proyecto:_
+_Tecnologías utilizadas en este proyecto:_
 
 - [Node.js](https://nodejs.org/es/docs) - Entorno de ejecución js en el servidor.
 - [Bcrypt](https://openbase.com/js/bcrypt/documentation) - Función de hashing de contraseñas.
@@ -107,12 +107,13 @@ _Tecnologias utilizadas en este proyecto:_
 - [Express](https://expressjs.com/es/) - Entorno de trabajo para aplicaciones web.
 - [Passport](https://www.passportjs.org/) - Passport is authentication middleware.
 - [Winston](https://www.npmjs.com/package/winston) - Logger.
-- [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Lenguaje de etiquetas de hipertexto
-- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Framework CSS
-- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Motor de base de datos en memoria
-- [Mongo DB](https://www.mongodb.com/docs/) - Base de datos
-- [Sass](https://sass-lang.com/documentation/) - Procesador de estilos
-- [JavaScript](https://www.w3schools.com/js/js_es6.asp) - Lenguaje de programación interpretado ECMAScript 6
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Lenguaje de etiquetas de hipertexto.
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Framework CSS.
+- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Motor de base de datos en memoria.
+- [Mongo DB](https://www.mongodb.com/docs/) - Base de datos.
+- [Sass](https://sass-lang.com/documentation/) - Procesador de estilos.
+- [JavaScript](https://www.w3schools.com/js/js_es6.asp) - Lenguaje de programación interpretado ECMAScript 6.
+- [Nodemailer](https://www.w3schools.com/js/js_es6.asp) - Nodemailer.
 
 ## Versionado 📌
 
