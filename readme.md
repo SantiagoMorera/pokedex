@@ -1,6 +1,6 @@
 # POKEDEX by thisisanti.dev
 
-_Esta es una aplicación para guardar Pokémon favoritos y buscar su información consumiendo la PokeAPI._
+_Esta es una aplicación Node.js hecha en capas, para guardar Pokémon favoritos y buscar su información consumiendo la PokeAPI._
 
 ## 🟢 App en linea en Fly.io:
 

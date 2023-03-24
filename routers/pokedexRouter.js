@@ -5,9 +5,9 @@ import { getPokedexController, getPokedexJSONController, getPokemonListControlle
 const router = new Router()
 
 router.get('/', getPokedexJSONController);
-router.get('/view', getPokedexController);
-router.get('/list', getPokemonListController);
-router.get('/finder', getPokemonFinderController);
+router.get('/list', getPokedexController);
+router.get('/favoritos', getPokemonListController);
+router.get('/buscar', getPokemonFinderController);
 
 
 export { router as pokedexRouter };

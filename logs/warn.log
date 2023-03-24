@@ -25,3 +25,5 @@
 {"level":"error","message":"❌ cant send SMS to 5531424218"}
 {"level":"warn","message":"⚠️ Invalid Password"}
 {"level":"warn","message":"⚠️ Invalid Password"}
+{"level":"warn","message":"⚠️ User Not Found with username santi.iztli@gmail.com"}
+{"level":"warn","message":"⚠️ User Not Found with username santi.iztli@gmail.com"}
