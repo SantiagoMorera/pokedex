@@ -27,7 +27,7 @@ redisConnect();
 
 export class mainServer {
   constructor() {
-    this.PORT = process.env.PORT || 8888;
+    this.PORT = process.env.PORT || 8080;
     this.app = express();
     this.httpServer = new HttpServer(this.app);
     this.middlewares();
