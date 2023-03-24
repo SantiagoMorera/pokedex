@@ -2,7 +2,7 @@
 
 _Esta es una aplicación para guardar Pokémon favoritos y buscar su información consumiendo la PokeAPI._
 
-## 🟢 App en linea en:
+## 🟢 App en linea en Fly.io:
 
 ```
 https://delicate-tree-6336.fly.dev/
