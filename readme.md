@@ -1,6 +1,6 @@
 # POKEDEX by thisisanti.dev
 
-_Esta es una aplicación para guardar Pokémons favoritos y buscar su información consumiendo la PokeAPI_
+_Esta es una aplicación para guardar Pokémons favoritos y buscar su información consumiendo la PokeAPI._
 
 ## Screenshot
 
@@ -21,13 +21,13 @@ git clone https://github.com/santi-iztli/pokedex
 _Programas necesarios_
 
 ```
-Cualquier explorador Chrome, Firefox, Safari ...
+Un explorador como: Chrome, Firefox o Safari.
 ```
 
-- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Redis Local
 - [VSCode](https://code.visualstudio.com/) - Descarga el editor de codigo
+- [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Redis Local
 
-## Instalación 🔧
+## Ejecutar App en local 🔧
 
 _Abrir la carpeta de la app en VSCode_
 
@@ -80,6 +80,22 @@ _Para hacer modificaciones en en los estilos en la carpeta del protecto ejecuta:
 npm run sass
 ```
 
+## Correr testing ✅
+
+_Con el la app corriendo en el puerto localhost:8090 ejecuta los siguientes comandos:_
+
+```
+npm run testAxios
+```
+
+ó
+
+```
+npm run testMocha
+```
+
+_Obtendrás el resultado de golpear la ruta get en nuestra api/pokedex_
+
 ## Construido con 🛠️
 
 _Tecnologias utilizadas en este proyecto:_
@@ -101,7 +117,9 @@ _Tecnologias utilizadas en este proyecto:_
 ## Versionado 📌
 
 ```
+
 1.0
+
 ```
 
 ## Autor ✒️
@@ -110,6 +128,11 @@ _Tecnologias utilizadas en este proyecto:_
 - **Santiago Morera** - _Documentación_ - [Santiago Morera](https://thisissanti.dev/)
 
 ```
+
 ⌨️ por [Santiago Morera](https://thisissanti.dev/) 😊
+
+```
+
+```
 
 ```
