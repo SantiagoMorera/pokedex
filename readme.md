@@ -113,12 +113,12 @@ npm run sass
 _Tecnologias utilizadas en este proyecto:_
 
 - [Node.js](https://nodejs.org/es/docs) - Entorno de ejecución js en el servidor.
-- [bcrypt](https://openbase.com/js/bcrypt/documentation) - Función de hashing de contraseñas.
-- [compression](https://www.npmjs.com/package/compression) - Node.js compression middleware.
-- [cors](https://www.npmjs.com/package/cors) - CORS (Cross-Origin Resource Sharing).
-- [express](https://expressjs.com/es/) - Entorno de trabajo para aplicaciones web.
-- [passport](https://www.passportjs.org/) - Passport is authentication middleware.
-- [winston](https://www.npmjs.com/package/winston) - Logger.
+- [Bcrypt](https://openbase.com/js/bcrypt/documentation) - Función de hashing de contraseñas.
+- [Compression](https://www.npmjs.com/package/compression) - Node.js compression middleware.
+- [Cors](https://www.npmjs.com/package/cors) - CORS (Cross-Origin Resource Sharing).
+- [Express](https://expressjs.com/es/) - Entorno de trabajo para aplicaciones web.
+- [Passport](https://www.passportjs.org/) - Passport is authentication middleware.
+- [Winston](https://www.npmjs.com/package/winston) - Logger.
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Lenguaje de etiquetas de hipertexto
 - [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Framework CSS
 - [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Motor de base de datos en memoria
