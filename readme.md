@@ -137,14 +137,7 @@ _Tecnologias utilizadas en este proyecto:_
 - **Santiago Morera** - _Trabajo Inicial_ - [Santiago Morera](https://thisissanti.dev/)
 - **Santiago Morera** - _Documentación_ - [Santiago Morera](https://thisissanti.dev/)
 
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia)
-
----
-
-⌨️ por [Santiago Morera](https://thisissanti.dev/) 😊
-
 ```
+⌨️ por [Santiago Morera](https://thisissanti.dev/) 😊
 
 ```
