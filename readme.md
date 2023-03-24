@@ -1,29 +1,3 @@
-Pokédex
-
-0.- Este proyecto esta hecho con redis por lo tanto necesitas
-
-1.- npm i
-
-2.-
-a) mongo - npm run prod (iniciar con mongo para el testing)
-b) memory - npm run dev
-c) file - npm run file
-
-3.- En una terminal aparte del server que está corriendo ejecuta: (Testing de productos en mongo "get y post")
-npm run testMocha "para correr el test de mocha"
-npm run testAxios "para correr el test de Axios"
-
-4.- Server alojado dentro de una clase ( aun falta importarlo en app.js)
-
-5.- Datos de login:
-
-Usuario: santi.iztli@gmail.com
-Password: santipass
-
-6.- Productos y carrito disponible.
-
-7.- ( Chat no disponible aun)
-
 # POKEDEX by thisisanti.dev
 
 _Esta es una aplicación para guardar Pokémons favoritos y buscar su información consumiendo la PokeAPI_
@@ -32,7 +6,7 @@ _Esta es una aplicación para guardar Pokémons favoritos y buscar su informaci�
 
 ![Imagen](/public/img/Screenshot-pokedex.png)
 
-## Comenzando 🚀
+## Clonando 🚀
 
 _Git clone para obtener un copia del proyecto_
 
@@ -42,9 +16,9 @@ _Ejecuta:_
 git clone https://github.com/santi-iztli/pokedex
 ```
 
-### Pre-requisitos 📋
+## Pre-requisitos 📋
 
-_Programas necesatios_
+_Programas necesarios_
 
 ```
 Cualquier explorador Chrome, Firefox, Safari ...
@@ -53,11 +27,9 @@ Cualquier explorador Chrome, Firefox, Safari ...
 - [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Redis Local
 - [VSCode](https://code.visualstudio.com/) - Descarga el editor de codigo
 
-### Instalación 🔧
+## Instalación 🔧
 
-_Para visualidar este codigo se recomienda el editor de codigo VScode_
-
-_Abrir proyecto en la capeta del proyecto en VScode_
+_Abrir la carpeta de la app en VSCode_
 
 ```
 cd pokedex
@@ -100,7 +72,7 @@ Dentro de la app puedes:
 A disfrutar Pokedex 🚀
 ```
 
-### Iniciar Sass ⌨️
+## Iniciar Sass ⌨️
 
 _Para hacer modificaciones en en los estilos en la carpeta del protecto ejecuta:_
 

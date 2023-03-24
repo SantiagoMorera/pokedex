@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js mongo",
-    "testMocha": "mocha ./test/testProductsMocha.js",
-    "testAxios": "node ./test/testProductsAxios.js",
+    "testMocha": "mocha ./test/testPokedexMocha.js",
+    "testAxios": "node ./test/testPokedexAxios.js",
     "start": "node app.js mongo",
     "sass": "sass --watch public/styles/scss/styles.scss public/styles/css/styles.css"
   },
