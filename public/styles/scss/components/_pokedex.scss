@@ -1,0 +1,85 @@
+.pokedex-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+
+    .pokemon-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        background-color: rgba(240, 248, 255, 0.2);
+        border-radius: 15px;
+        margin: 10px;
+        transition: all .2s ease;
+
+        h2 {
+            margin: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: rgba(240, 248, 255, 0.3);
+        }
+
+
+    }
+}
+
+
+.poke-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(240, 248, 255, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+
+    img {
+        width: 100px
+    }
+
+}
+
+;
+
+.boton-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.poke-boton {
+    background-color: rgba(34, 102, 211, 0.8);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    transition: all .2s ease;
+    text-transform: capitalize;
+
+
+    &:hover {
+        background-color: rgba(34, 102, 211, 1);
+    }
+}
+
+;
+
+.catalogo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
