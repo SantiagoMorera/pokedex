@@ -43,8 +43,8 @@ export class mainServer {
     this.app.use(
       session({
         store: new RedisStoreSession({
-          host: "localhost",
-          port: 6379,
+          host: 'redis-14483.c84.us-east-1-2.ec2.cloud.redislabs.com',
+          port: 14483,
           client,
           ttl: 300,
         }),
