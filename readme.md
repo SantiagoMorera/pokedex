@@ -119,7 +119,6 @@ _Tecnologias utilizadas en este proyecto:_
 - [express](https://expressjs.com/es/) - Entorno de trabajo para aplicaciones web.
 - [passport](https://www.passportjs.org/) - Passport is authentication middleware.
 - [winston](https://www.npmjs.com/package/winston) - Logger.
-- [bcrypt](https://openbase.com/js/bcrypt/documentation) - Función de hashing de contraseñas.
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML) - Lenguaje de etiquetas de hipertexto
 - [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Framework CSS
 - [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-windows/) - Motor de base de datos en memoria
