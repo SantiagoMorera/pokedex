@@ -4,7 +4,12 @@ _Esta es una aplicación para guardar Pokémon favoritos y buscar su informació
 
 ## Screenshot
 
-![Imagen](/public/img/Screenshot-pokedex.png)
+_Inicio Pokédex_
+![Imagen](/public/img/ScreenshotPokedex.png)
+_Agregar a Favortitos_
+![Imagen](/public/img/ScreenshotFavoritos.png)
+_Buscador de Pokémon_
+![Imagen](/public/img/ScreenshotBuscador.png)
 
 ## Clonando 🚀
 
@@ -113,14 +118,13 @@ _Tecnologías utilizadas en este proyecto:_
 - [Mongo DB](https://www.mongodb.com/docs/) - Base de datos.
 - [Sass](https://sass-lang.com/documentation/) - Procesador de estilos.
 - [JavaScript](https://www.w3schools.com/js/js_es6.asp) - Lenguaje de programación interpretado ECMAScript 6.
-- [Nodemailer](https://www.w3schools.com/js/js_es6.asp) - Nodemailer.
+- [Nodemailer](https://nodemailer.com/usage/) - Applications to allow easy as cake email sending.
+- [Twilio](https://www.twilio.com/es-mx/) - Twilio APÏ SMS/Whatsapp.
 
 ## Versionado 📌
 
 ```
-
 1.0
-
 ```
 
 ## Autor ✒️
@@ -129,11 +133,6 @@ _Tecnologías utilizadas en este proyecto:_
 - **Santiago Morera** - _Documentación_ - [Santiago Morera](https://thisissanti.dev/)
 
 ```
-
 ⌨️ por [Santiago Morera](https://thisissanti.dev/) 😊
-
-```
-
-```
 
 ```

@@ -22,3 +22,6 @@
 {"level":"warn","message":"⚠️ Route entered by the client: {\"0\":\"/undefined\"}"}
 {"level":"warn","message":"⚠️ Route entered by the client: {\"0\":\"/undefined\"}"}
 {"level":"warn","message":"⚠️ Invalid Password"}
+{"level":"error","message":"❌ cant send SMS to 5531424218"}
+{"level":"warn","message":"⚠️ Invalid Password"}
+{"level":"warn","message":"⚠️ Invalid Password"}
