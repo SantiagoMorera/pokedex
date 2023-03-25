@@ -35,3 +35,7 @@
 {"level":"warn","message":"⚠️ No session to logout:"}
 {"level":"warn","message":"⚠️ No session to logout:"}
 {"level":"warn","message":"⚠️ User Not Found with username santi"}
+{"level":"warn","message":"⚠️ Invalid Password"}
+{"level":"warn","message":"⚠️ User Not Found with username sadfsdf"}
+{"level":"warn","message":"⚠️ Invalid Password"}
+{"level":"error","message":"❌ Error cant get pokémon service: AxiosError: Request failed with status code 404"}
