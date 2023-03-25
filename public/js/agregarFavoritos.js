@@ -19,7 +19,7 @@ let carrito = [];
 /* LocalStorage.getItem */
 carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-/* Fetch renderiza productos de stock en el DOM */
+/* Fetch renderiza pokemons de stock en el DOM */
 const printProductos = async () => {
   const respuesta = await fetch("/api/pokedex/");
   const data = await respuesta.json();
@@ -28,7 +28,7 @@ const printProductos = async () => {
 
 printProductos()
 
-/*  Funcion argegar al carrito sumar producto */
+/*  Funcion ya esta en favotitos */
 const agregarAlCarrito = (productoId) => {
   const item = carrito.find((producto) => producto.name === productoId);
   if (item) {
@@ -48,7 +48,7 @@ const agregarAlCarrito = (productoId) => {
       showConfirmButton: false,
       timer: 2000
     });
-    /*  Funcion argegar al carrito por primera vez */
+    /*  Funcion argegar a favoritos por primera vez */
   } else {
     let newProducto = stockProductos.find((producto) => producto.name === productoId);
     carrito.push(new Producto(newProducto));
@@ -82,7 +82,7 @@ const deleteCart = (productoId) => {
   actualizarCarrito()
 }
 
-/*  Vaciar el array del carrito */
+/*  Vaciar el array de favoritos */
 const vaciarCarrito = document.getElementById('vaciarCarrito')
 vaciarCarrito.addEventListener('click', () => {
   carrito.length = 0
@@ -90,8 +90,7 @@ vaciarCarrito.addEventListener('click', () => {
 })
 
 
-/*  Renderizar productos en carrito */
-
+/*  Renderizar productos en favoritos */
 const carritoWrapper = document.getElementById("carrito-wrapper")
 const actualizarCarrito = () => {
   carritoWrapper.innerHTML = "";
@@ -126,7 +125,7 @@ const actualizarCarrito = () => {
     })
   }
 
-  /* Guardar en localStorage.setItem el array del carrito */
+  /* Guardar en localStorage.setItem el array de favoritos */
   localStorage.setItem('carrito', JSON.stringify(carrito))
 
   const productosCounter = document.getElementById("productosCounter")
@@ -144,7 +143,7 @@ actualizarCarrito()
 
 
 function cargarListado() {
-  fetch('https://pokeapi.co/api/v2/pokemon?limit=50&offset=0')
+  fetch('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0')
     .then(function (response) {
       return response.json();
     })
@@ -162,8 +161,7 @@ function cargarListado() {
 cargarListado();
 
 
-//obtener la info de un pokemon puntual
-//no es un entpoint, por eso no va con comillas
+/* obtener la data de un pokemon puntual */
 function cargarPokemon(url) {
   fetch(url)
     .then(function (response) {
@@ -187,6 +185,7 @@ function crearCarta(poke) {
   carta.innerHTML = planilla
   const boton = document.getElementById(`p${poke.name}`)
   boton.addEventListener("click", () => {
+    console.log('poke', poke);
     agregarAlCarrito(poke.name)
   })
 }

@@ -13,11 +13,13 @@ body {
 }
 
 .home-box {
-    display: grid;
-    place-items: center;
-    animation: fadeInDown .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeInDown 0.5s;
 }
-
 
 .logout-box {
     display: grid;

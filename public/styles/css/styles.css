@@ -88,8 +88,11 @@ body {
 }
 
 .home-box {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
   animation: fadeInDown 0.5s;
 }
 
@@ -643,6 +646,7 @@ button {
   border-radius: 15px;
   margin: 10px;
   transition: all 0.2s ease;
+  animation: fadeInUp 0.5s;
 }
 .pokedex-wrapper .pokemon-card h2 {
   margin: 10px;
@@ -670,9 +674,10 @@ button {
   border-radius: 15px;
   width: 300px;
   margin-top: 100px;
+  animation: fadeInUp 0.5s;
 }
 .poke-card img {
-  width: 300px;
+  width: 200px;
 }
 
 .boton-wrapper {
@@ -682,6 +687,7 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 700px;
+  margin-bottom: 70px;
 }
 
 .poke-boton {
@@ -692,6 +698,7 @@ button {
   color: white;
   transition: all 0.2s ease;
   text-transform: capitalize;
+  animation: fadeInUp 0.5s;
 }
 .poke-boton:hover {
   background-color: rgb(34, 102, 211);
@@ -702,6 +709,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: fadeInUp 0.5s;
 }
 
 .pokedex-finder-wrapper {
@@ -709,6 +717,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: fadeInUp 0.5s;
 }
 .pokedex-finder-wrapper form {
   width: 300px;
