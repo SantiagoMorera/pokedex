@@ -63,7 +63,7 @@ Password: santipass
 ```
 
 ```
-Puedes registarte en el enlace http://localhost:8090/api/auth/signup
+Puedes registarte en el enlace a Sign Up
 ```
 
 ```
