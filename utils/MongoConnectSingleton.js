@@ -11,7 +11,7 @@ export class MongoConnectSingleton {
     constructor() {
         mongoose.set('strictQuery', false)
         mongoose.connect(mongoURL)
-            .then(() => logger.log('info', "✅ Session MongoDB ON"))
+            .then(() => logger.log('info', "✅ Users from MongoDB ON"))
             .catch(e => logger.log('error', ` ❌ DB OFF ${e}`));
     }
     static getInstance() {

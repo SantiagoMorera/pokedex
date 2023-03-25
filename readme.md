@@ -9,17 +9,17 @@ _Esta es una aplicación Node.js hecha en capas, para guardar Pokémon favoritos
 ## Screenshot
 
 _Inicio Pokédex_
-![Imagen](/public/img/ScreenshotPokedex.png)
+![Imagen](/public/img/ScreenshotPokedex.webp)
 _Agregar a Favortitos_
-![Imagen](/public/img/ScreenshotFavoritos.png)
+![Imagen](/public/img/ScreenshotFavoritos.webp)
 _Buscador de Pokémon_
-![Imagen](/public/img/ScreenshotBuscador.png)
+![Imagen](/public/img/ScreenshotBuscador.webp)
 
 ## Clonando 🚀
 
 _Git clone para obtener un copia del proyecto_
 
-_Ejecuta:_
+_Ejecuta en una terminal bash:_
 
 ```bash
 git clone https://github.com/santi-iztli/pokedex

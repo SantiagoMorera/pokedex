@@ -20,7 +20,7 @@ export const RedisStoreSession = RedisStore(session);
 export const redisConnect = () => {
     try {
         client.connect()
-        logger.log('info', "✅ Redis ON")
+        logger.log('info', "✅ Redis from cloud ON")
 
     } catch (error) {
         throw logger.log('error', `❌ Can not connect to Redis! ${e}`)

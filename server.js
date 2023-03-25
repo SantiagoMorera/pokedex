@@ -2,28 +2,21 @@ import compression from "compression";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
+import { Server as HttpServer } from 'http';
 import { engine } from "express-handlebars";
 import session from "express-session";
 import passport from "passport";
 import path from "path";
 import { fileURLToPath } from "url";
 import { passportInit } from "./middleware/passportAuth.js";
-import {
-  authRouter,
-  defaultRouter, pokedexRouter, userRouter
-} from "./routers/router.js";
+import { authRouter, defaultRouter, pokedexRouter, userRouter } from "./routers/router.js";
 import { client, redisConnect, RedisStoreSession } from "./utils/redis.js";
 import logger from "./utils/winston.js";
 dotenv.config();
 const app = express();
 
-import { Server as HttpServer } from 'http';
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-passportInit();
-redisConnect();
 
 export class mainServer {
   constructor() {
@@ -33,7 +26,13 @@ export class mainServer {
     this.middlewares();
     this.routes();
     this.templatingEngine();
+    this.userAuth();
   }
+
+  userAuth() {
+    passportInit();
+    redisConnect();
+  };
 
   middlewares() {
     this.app.use(cors());

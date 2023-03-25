@@ -49,7 +49,7 @@ export const passportInit = () => {
                 User.findOne({ username: username }, async function (err, user) {
                     if (err) {
 
-                        res.render('usuario-registrado');
+                        res.render('pages/usuarioRegistrado');
                         logger.log('warn', "❌ Error in SignUp: " + err);
                         return done(err);
                     }
@@ -89,7 +89,7 @@ export const checkAuthentication = (req, res, next) => {
     if (req.isAuthenticated()) {
         next();
     } else {
-        res.redirect("pages/login");
+        res.render("pages/noAuth");
     }
 }
 

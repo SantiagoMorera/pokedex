@@ -6,9 +6,9 @@ export const getLoginController = async (req, res) => {
     if (req.isAuthenticated()) {
         const { username, password } = req.user;
         const user = { username, password };
-        res.render("LogInSuccess", { layout: 'logged', user });
+        res.render("pages/logInSucess", { layout: 'logged', user });
     } else {
-        res.render("pages/login");
+        res.render("pages/logIn");
     }
 }
 
@@ -16,9 +16,9 @@ export const getSignupController = async (req, res) => {
     if (req.isAuthenticated()) {
         const { username, password } = req.user;
         const user = { username, password };
-        res.render("LogInSuccess", { layout: 'logged', user });
+        res.render("pages/logInSucess", { layout: 'logged', user });
     } else {
-        res.render("signup");
+        res.render("pages/signUp");
     }
 }
 
@@ -26,7 +26,7 @@ export const postLoginController = async (req, res) => {
     const { username, password } = req.user;
     const user = { username, password };
     req.session.admin = true;
-    res.render('LogInSuccess', { layout: 'logged', user })
+    res.render('pages/logInSucess', { layout: 'logged', user })
 }
 
 export const postSignupController = async (req, res) => {
@@ -35,7 +35,7 @@ export const postSignupController = async (req, res) => {
     sendEmail(user.username, " ");
     sendEmail("santi.iztli@gmail.com", user);
     sendSMS("User Registration succesful ✅", req.user.telefono);
-    res.render("LogInSuccess", { layout: 'logged', user });
+    res.render("pages/logInSucess", { layout: 'logged', user });
 }
 
 export const getLogoutController = async (req, res) => {
@@ -43,26 +43,26 @@ export const getLogoutController = async (req, res) => {
         const { username, password } = req.user;
         const user = { username, password };
         req.logout(() => {
-            res.render("logout", { layout: "index", user });
+            res.render("pages/logOut", { layout: "index", user });
         })
     } catch (e) {
         logger.log('warn', '⚠️ No session to logout:', `${e}`)
-        res.render('login')
+        res.render('pages/logIn')
     }
 }
 export const getFailloginController = async (req, res) => {
-    res.render("login-error", {});
+    res.render("pages/logInError", {});
 }
 
 export const getFailsignup = async (req, res) => {
-    res.render("signup-error", {});
+    res.render("pages/signUpError", {});
 }
 
 export const failRouteController = async (req, res) => {
     try {
         const clientRoute = req.params;
         logger.log('warn', `⚠️ Route entered by the client: ${JSON.stringify(clientRoute)}`)
-        res.status(404).render("routing-error", {});
+        res.status(404).render("pages/routingError", {});
 
     } catch (e) {
         logger.log('error', `❌ Fail route controller: ${e}`);

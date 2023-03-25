@@ -11,7 +11,7 @@ export let DAO;
 MongoConnectSingleton.getInstance();
 
 if (mode == 'mongo') {
-    logger.log('info', `✅ DAOpokedexAPI ON`);
+    logger.log('info', `✅ Data from DAOpokedexAPI ON`);
     DAO = new DAOpokedexAPI;
 } else {
     throw logger.log('warn', `⚠️ DAOfactory unsetted`);
