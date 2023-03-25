@@ -11,14 +11,14 @@ export const getPokedexService = async () => {
 };
 
 /* Aqui te quedaste */
-// export const getPokedexURLService = async () => {
-//     try {
-//         const data = await DAO.getPokedexData()
-//         const urls = data.map(objeto => objeto.url)
-//         const imagesURL = await fetch(urls)
+export const getPokedexURLService = async () => {
+    try {
+        const data = await DAO.getPokedexData()
+        const urls = data.map(objeto => objeto.url)
+        const imagesURL = await fetch(urls)
 
-//         console.log('PokeDataUrl:', imagesURL);
-//     } catch (e) {
-//         logger.log('error', `❌ Error cant get pokémon service: ${e}`);
-//     }
-// };
+        console.log('PokeDataUrl:', imagesURL);
+    } catch (e) {
+        logger.log('error', `❌ Error cant get pokémon service: ${e}`);
+    }
+};
