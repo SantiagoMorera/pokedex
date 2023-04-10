@@ -3,36 +3,59 @@ import logger from "./winston.js";
 import dotenv from 'dotenv';
 dotenv.config();
 
-export const sendEmail = async (mail, body) => {
+const transporter = createTransport({
+    service: 'gmail',
+    port: 587,
+    auth: {
+        user: process.env.NODEMAILER_USER,
+        pass: process.env.NODEMAILER_PASS
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
+});
 
-    const TEST_MAIL = mail
 
-    const transporter = createTransport({
-        service: 'gmail',
-        port: 587,
-        auth: {
-            user: process.env.NODEMAILER_USER,
-            pass: process.env.NODEMAILER_PASS
-        },
-        tls: {
-            rejectUnauthorized: false
-        }
-    });
 
-    const mailOptions = {
+
+export const sendUserEmail = async (username, password) => {
+
+    const UserMailOptions = {
         from: 'santi.iztli@gmail.com',
-        to: TEST_MAIL,
-        subject: 'Backend e-commerce registro exitoso',
-        html: `<h3 style="color:green;">✅ Registro exitoso!</h3>
-        <p><strong>Username:</strong>${TEST_MAIL}</p>`,
+        to: username,
+        subject: '✅ Pokedex successful registration!',
+        html: `
+        <h3 style="color:green;">✅ Successful registration! Pokedex</h3>
+        <h2>Welcome to Pokedex BySanti.dev Crew</h2>
+        <p><strong>Username:</strong>${username}</p>
+        <p><strong>Password:</strong>${password}</p>
+        <p>Your password is encrypted and only you can see it</p>
+        `,
     }
 
     try {
-        const info = await transporter.sendMail(mailOptions)
-        logger.log('info', `✅ email has been sent to ${TEST_MAIL}`)
+        const info = await transporter.sendMail(UserMailOptions)
+        logger.log('info', `✅ email has been sent to ${username}`)
     } catch (err) {
-        logger.log('error', `❌ cant sent mail to ${TEST_MAIL}`)
+        logger.log('error', `❌ cant sent mail to ${username}`)
+    }
+}
+
+export const sendAdminEmail = async (newUserName) => {
+
+    const adminMailOptions = {
+        from: 'santi.iztli@gmail.com',
+        to: 'santi.iztli@gmail.com',
+        subject: '✅ New user at Pokedex!',
+        html: `<h3 style="color:green;">✅ Successful registration! Pokedex</h3>
+        <p><strong>New user:</strong>${newUserName}</p>`,
     }
 
+    try {
+        const info = await transporter.sendMail(adminMailOptions)
+        logger.log('info', `✅ email has been sent to admin!`)
+    } catch (err) {
+        logger.log('error', `❌ cant sent mail to admin!`)
+    }
 }
 

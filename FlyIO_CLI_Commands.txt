@@ -1,0 +1,11 @@
+# Deploy at fly.io
+
+# To deploy:
+
+fly launch
+fly launch --now
+flyctl launch
+fly launch --image flyio/hellofly:latest
+
+
+

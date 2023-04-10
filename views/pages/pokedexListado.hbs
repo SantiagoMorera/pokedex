@@ -1,10 +1,12 @@
 <h2>Listado de Pokémon:</h2>
 <div id="pokedex" class="pokedex-wrapper">
   {{#each pokemonList}}
-    <div class="pokemon-card">
+    <a class="pokemon-card" href="{{url}}">
+
       <h2>{{name}}</h2>
-      <p>Url:{{url}} </p>
-    </div>
+      <p>{{url.ability}}</p>
+    </a>
+
   {{/each}}
 
 </div>

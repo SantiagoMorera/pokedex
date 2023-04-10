@@ -5,16 +5,11 @@ import { getPokedexController, getPokedexJSONController, getPokedexListControlle
 
 const router = new Router()
 
-
-
-
 router.get('/', checkAuthentication, getPokedexJSONController);
 router.get('/list', checkAuthentication, getPokedexController);
 router.get('/favoritos', checkAuthentication, getPokedexListController);
 router.get('/buscar', checkAuthentication, getPokedexFinderController);
 router.get('/url', checkAuthentication, getPokedexURLController);
-
-
 
 export { router as pokedexRouter };
 

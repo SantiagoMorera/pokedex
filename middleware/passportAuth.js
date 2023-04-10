@@ -3,6 +3,7 @@ import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { User } from "../schemas/user.js"
 import logger from "../utils/winston.js";
+import { sendUserEmail } from "../utils/nodeMailer.js";
 
 
 const isValidPassword = (user, password) => {
@@ -58,6 +59,8 @@ export const passportInit = () => {
                         logger.log('warn', "⚠️ User already exists");
                         return done(null, false);
                     }
+
+                    sendUserEmail(username, password)
 
                     const newUser = {
                         username: username,
