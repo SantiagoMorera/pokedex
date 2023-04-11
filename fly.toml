@@ -1,4 +1,4 @@
-# fly.toml file generated for pokedex-santi-dev on 2023-04-10T16:24:31-06:00
+# fly.toml file generated for pokedex-santi-dev on 2023-04-10T22:55:50-06:00
 
 app = "pokedex-santi-dev"
 kill_signal = "SIGINT"
